@@ -21,7 +21,9 @@ $(function() {
 					$body.find('a').css('cursor', 'auto');
 					$container.html($content);
 					initMain();
-					
+					$('img').each(function(){
+					  new RetinaImage(this);
+					});
 					$('body').toggleClass('project');
 				}
 			},
@@ -62,13 +64,13 @@ function parseUrl(url) {
 }
 
 function initMain() {
-	$('.projects').on('click', 'a', function() {
+	$('.project-row').on('click', 'a', function() {
 		// add active class to clicked link in order to make sure it doesn't hide.
 		$(this).addClass('active');
 		$(this).parent().addClass('active');
 	});
 
-	$(".projects").hover(function() {
+	$(".project-row").hover(function() {
 		// hover in
 		var slug = $(this).attr('data-slug');
 		$('#bg-wrapper div.' + slug).addClass('active');

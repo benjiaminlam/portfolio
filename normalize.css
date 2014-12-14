@@ -319,7 +319,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-family: "Source Code Pro", "Courier New", monospace;
+  font-family: "source-code-pro", "Source Code Pro", "Courier New", monospace;
   font-weight: 400;
   font-style: normal;
   background: #fff;
@@ -341,7 +341,7 @@ p a:link, p a:visited {
   text-decoration: underline; }
 
 h1, h2, h3, h4, h5, h6, p {
-  font-family:  "Source Code Pro", "Courier New", monospace;
+  font-family:  "Courier New", monospace;
   font-weight: 400;
   font-style: normal;
   margin: 0; }
@@ -531,7 +531,7 @@ body, html {
     -webkit-transition: opacity 600ms ease-in, -webkit-transform 1400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
     transition: opacity 600ms ease-in, transform 1400ms cubic-bezier(0.455, 0.03, 0.515, 0.955); }
     #bg-wrapper .bg-image.active {
-      opacity: .10;
+      opacity: 0.1;
       -webkit-transform: scale(1.03, 1.03);
       transform: scale(1.03, 1.03); }
 
